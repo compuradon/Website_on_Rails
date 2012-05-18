@@ -1,8 +1,9 @@
 Homepage::Application.routes.draw do
+  get "home/index"
+
   resources :users
-  get "pages/home"
   get "users/index"
-  root :to => "Pages#home"
+  root :to => "home#index"
   #root :to => 'users#index'
 
 
