@@ -3,8 +3,8 @@ Homepage::Application.routes.draw do
 
   resources :users
   get "users/index"
-  root :to => "home#index"
-  #root :to => 'users#index'
+  #root :to => "home#index"
+  root :to => 'users#index'
 
 
   # The priority is based upon order of creation:
