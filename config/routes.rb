@@ -1,10 +1,14 @@
 Homepage::Application.routes.draw do
+  get "static_pages/home"
+
+  get "static_pages/help"
+
   get "home/index"
 
   resources :users
   get "users/index"
   #root :to => "home#index"
-  root :to => 'users#index'
+  #root :to => 'users#index'
 
 
   # The priority is based upon order of creation:
