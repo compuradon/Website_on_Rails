@@ -1,4 +1,13 @@
-<h1>Tom's Homepage</h1>
-<p>
-  This is the home page 
-</p>
+<% provide(:title, 'Home') %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %></title>
+  </head>
+  <body>
+    <h1>Toms Homepage</h1>
+    <p>
+      This is the home page for the future
+    </p>
+  </body>
+</html>
