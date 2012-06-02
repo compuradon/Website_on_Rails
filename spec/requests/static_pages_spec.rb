@@ -7,7 +7,7 @@ describe "StaticPages" do
     
     it "should have the h1 'Tom's Homepage'" do
           visit '/static_pages/home'
-          page.should have_selector('h1', :text => 'Toms Homepage')
+          page.should have_selector('h1', :text => "Tom's Homepage")
         end
 
         it "should have the base title" do
