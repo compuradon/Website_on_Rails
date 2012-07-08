@@ -1,7 +1,13 @@
 Homepage::Application.routes.draw do
+<<<<<<< HEAD
   #get "users/new"
+=======
+  resources :users
+  root :to => 'static_pages#home'
 
-  get "static_pages/home"
+>>>>>>> master
+
+  #get "static_pages/home"
   #get "static_pages/about"
   #get "static_pages/help"
   #get "static_pages/contact"
@@ -14,10 +20,12 @@ Homepage::Application.routes.draw do
 
   get "home/index"
 
-  resources :users
   get "users/index"
+<<<<<<< HEAD
   
   root :to => 'static_pages#home'
+=======
+>>>>>>> master
   #root :to => 'users#index'
 
 
