@@ -20,6 +20,9 @@ Homepage::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+  # Force access to the app use secure cookies
+  config.force_ssl = true
+
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
 
