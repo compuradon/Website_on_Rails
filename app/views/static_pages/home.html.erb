@@ -1,19 +1,28 @@
-<div class="center hero-unit">
-  <h1>LEARN HOW TO BE ACTIVE 24 HOURS A DAY AND LIVE FOREVER  </h1>
+<% if signed_in? %>
+  <div class="row">
+    <aside class="span4">
+      <section>
+        <%= render 'shared/user_info' %>
+      </section>
+      <section>
+        <%= render 'shared/micropost_form' %>
+      </section>
+    </aside>
+  <div class="span8">
+      <h3>Micropost Feed</h3>
+      <%= render 'shared/feed' %>
+    </div>
+  </div>  
+<% else %>
+  <div class="center hero-unit">
+    <h1>Learn how to be active 24 hours a day and live forever!</h1>
 
-  
-     
-  <h1>
+    
+    <%= link_to "Sign up now!", signup_path, 
+                                :class=> "btn btn-large btn-primary" %>
+  </div>
 
-  <%= link_to "Sign up now!", signup_path, :class => "btn btn-large btn-primary" %>
-</div>
-
-<%
-=begin
-%>
-<%= link_to image_tag("rails.png", :alt => "Rails"), 'http://greygoo.herokuapp.com/static_pages/home' %>
-<%
-=end
-%>	  
+  <%= link_to image_tag("rails.png", :alt=> "Rails"), 'http://rubyonrails.org/' %>
+<% end %>   
 
  
